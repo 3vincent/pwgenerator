@@ -27,14 +27,14 @@ struct PWGenerator: ParsableCommand {
                 
                 if specialCharacters {
                     if Bool.random() {
-                        pw += String(digits.randomElement()!)
+                        pw += String(symbols.randomElement()!)
                         continue
                     }
                 }
                 
                 if numbers {
                     if Bool.random() {
-                        pw += String(symbols.randomElement()!)
+                        pw += String(digits.randomElement()!)
                         continue
                     }
                 }
